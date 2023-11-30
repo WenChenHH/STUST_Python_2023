@@ -11,5 +11,5 @@ class cars:
 
 
 
-T1=cars("Blue",4)
+
 
