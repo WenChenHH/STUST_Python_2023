@@ -11,5 +11,7 @@ class cars:
 
 
 
+T1=cars("blue",4)
 
+T1.drive
 
