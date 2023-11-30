@@ -1,69 +1,82 @@
 class Student:
+    schoolName = "南台科技大學"
+    schoolAddress="南台街1號"
 
-    def __init__(self,School,Department,Grade,Name,ID,Credit,Score,School_Address,student_Address):
-        self.school=School
-        self.department=Department
-        self.grade=Grade
-        self.credit=Credit
-        self.score=Score
-        self.name=Name
-        self.school_Address=School_Address
-        self.student_Address=student_Address
-        self.id=ID
-
-    def getSchoolName(self,School):
-        return self.school
-
-    def setSchoolName(self,new_School):
-        self.school=new_School
-        
-
-    def getDepartment(self,Department):
-        return self.department
-
-    def setDepartment(self,new_Department):
-        self.department=new_Department
-
-
-    def getGrade(self,Grade):
-        return self.grade
-
-    def setGrade(self,new_Grade):
-        self.grade=new_Grade
+    def __init__(self,major,grade,name,id,credit,score,student_Address):
+        self._major=major
+        self._grade=grade
+        self._credit=credit
+        self._score=score
+        self._name=name
+        self._student_Address=student_Address
+        self._id=id
     
-    def getName(self,Name):
-        return self.name
+    def getSchoolName(self):
+        return self.schoolName
     
-    def setName(self,new_Name):
-        self.name=new_Name
+    def setSchoolName(self,new_school):
+        self.schoolName=new_school
+    # @property
+    # def school_name(self):
+    #     return self._school
+    # @school_name.setter
+    # def school_name(self,value):
+    #     self._school = value
+    # @school_name.deleter
+    # def school_name(self):
+    #     del self._school
 
-    def getID(self,ID):
-        return self.id
+    def getmajor(self):
+        return self._major
 
-    def setID(self,new_ID):
-        self.id=new_ID
+    def setmajor(self,new_major):
+        self._major=new_major
 
-    def getCredit(self,Credit):
-        return self.credit
+
+    def getGrade(self):
+        return self._grade
+
+    def setGrade(self,new_grade):
+        self._grade=new_grade
     
-    def setCredit(self,new_Credit):
-        self.credit=new_Credit
-
-    def getScore(self,Score):
-        return self.score
+    def getName(self):
+        return self._name
     
-    def setScore(self,new_Score):
-        self.score=new_Score
+    def setName(self,new_name):
+        self._name=new_name
 
-    def getSchoolAddress(self,SchoolAddress):
-        return self.school_Address
+    def getID(self,):
+        return self._id
+
+    def setID(self,new_id):
+        self._id=new_id
+
+    def getCredit(self):
+        return self._credit
     
-    def setSchoolAddress(self,new_SchoolAddress):
-        self.school_Address=new_SchoolAddress
+    def setCredit(self,new_credit):
+        self._credit=new_credit
 
-    def getStudentAddress(self,StuedntAddress):
-        return self.student_Address
+    def getScore(self):
+        return self._score
     
-    def setStudentAddress(self,new_StuedntAddress):
-        self.student_Address=new_StuedntAddress
+    def setScore(self,new_score):
+        self._score=new_score
 
+    def getSchoolAddress(self):
+        return self.schoolAddress
+    
+    def setSchoolAddress(self,new_schoolAddress):
+        self.schoolAddress=new_schoolAddress
+
+    def getStudentAddress(self):
+        return self._student_Address
+    
+    def setStudentAddress(self,new_stuedntAddress):
+        self._student_Address=new_stuedntAddress
+
+st1=Student("資訊工程系","三年乙班","黃文震","4B0G0045",40,100,"台南市")
+print(st1.getSchoolName())
+print(st1.getSchoolAddress())
+st1.setSchoolName("stust")
+print(st1.getSchoolName())
