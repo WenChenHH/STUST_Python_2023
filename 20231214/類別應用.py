@@ -48,4 +48,4 @@ print(test.student_name, "  ", test.student_id, "  ", test.student_mojor)
 print(test.course._course)  # 注意這裡直接訪問 _course，因為 student_course 是一個方法
 
 # 刪除課程
-#test.course.delete_course()
+test.course.delete_course()
