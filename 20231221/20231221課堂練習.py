@@ -88,7 +88,7 @@ def create_tables(connection):
 
 def generate_sample_data(connection):
     sample_students = []
-    for i in range(10):
+    for i in range(15):
         student_id = f"STUST{i+1:03d}"
         name = f"學生{i+1}"
         student = Student(student_id, name, connection)
