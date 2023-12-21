@@ -95,7 +95,7 @@ def generate_sample_data(connection):
         for course_code, course_name in [("Python", "Python程式設計"), ("Java", "Java程式設計"),
                                          ("C++", "C++程式設計"), ("JavaScript", "JavaScript程式設計"),
                                          ("Database", "資料庫管理"), ("OS", "作業系統")]:
-            semester = "2023年秋季"
+            semester = "2023"
             student.add_course(course_code, course_name, semester)
 
         student.save_to_database()
