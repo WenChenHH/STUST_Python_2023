@@ -29,16 +29,16 @@ class stust_csie_drink:
         self.drink = drink
 
 class Drink:
-    def __init__(self,name, price, is_large, is_small):
+    def __init__(self, price, is_large, is_small):
         self.price = price
-        self.name = name
         self.is_large = is_large
         self.is_small = is_small
 
 
 class ColdDrink(Drink):#冷飲
-    def __init__(self, ice_level, sweetness):
+    def __init__(self, name, ice_level, sweetness):
         super().__init__(price=0, is_large=False, is_small=False)
+        self.name = name
         self.ice_level = ice_level
         self.sweetness = sweetness
 
