@@ -11,7 +11,7 @@ class FrieChicken:
         # 全雞
         self.whole_chicken = whole_chicken
     
-    def limbs_combo(self):
+    def limbs_combo(self):#套餐選擇
         print(f"你已成功點了套餐 {self.drumsitck}, {self.chicken_wings}, {self.breast}")
     
     def whole_chicken_combo(self):
