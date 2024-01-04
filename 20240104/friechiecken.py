@@ -21,9 +21,10 @@ class FrieChicken:
         print(f"你已成功點了套餐 {self.half_chicken}")
 
 # 建立三個物件
-chicken1 = FrieChicken("雞胸", "雞腿", "雞翅", "半隻雞", "整隻雞")
-chicken2 = FrieChicken("辣炸雞胸", "香烤雞腿", "孜然雞翅", "半隻香烤雞", "香烤整隻雞")
-chicken3 = FrieChicken("椒鹽雞胸", "蜜汁雞腿", "檸檬雞翅", "半隻椒鹽雞", "椒鹽整隻雞")
+chicken1 = FrieChicken("原味雞胸", "原味雞腿", "原味雞翅", "原味半隻雞", "原味全雞")
+chicken2 = FrieChicken("孜然雞胸", "孜然雞腿", "孜然雞翅", "半隻香草雞", "香草全雞")
+chicken3 = FrieChicken("椒鹽雞胸", "椒鹽雞腿", "椒鹽雞翅", "半隻椒鹽雞", "椒鹽全雞")
+chicken4 = FrieChicken("麻辣雞胸", "麻辣雞腿", "麻辣雞翅", "半隻麻辣雞", "麻辣全雞")
 
 # 呼叫物件方法
 chicken1.limbs_combo()
@@ -37,3 +38,7 @@ print("")
 chicken3.limbs_combo()
 chicken3.half_chicken_combo()
 chicken3.whole_chicken_combo()
+print("")
+chicken4.limbs_combo()
+chicken4.half_chicken_combo()
+chicken4.whole_chicken_combo()
